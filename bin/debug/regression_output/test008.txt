@@ -1,0 +1,8 @@
+File opened
+Section opened
+Block opened
+Block closed
+Block opened
+Block closed
+Section closed
+File closed

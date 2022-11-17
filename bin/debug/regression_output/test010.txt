@@ -1,0 +1,11 @@
+File opened
+Section opened
+Block opened
+Retrieved block type
+Snaplen 96 - linktype 2
+Block closed
+Block opened
+Retrieved block type
+Block closed
+Section closed
+File closed

@@ -1,0 +1,4 @@
+File created
+Section opened
+Section closed
+File closed

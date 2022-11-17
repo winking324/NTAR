@@ -1,0 +1,10 @@
+File opened
+Section opened
+Section options retrieved
+Option code 1
+Section closed
+Section opened
+Section options retrieved
+Option code 1
+Section closed
+File closed

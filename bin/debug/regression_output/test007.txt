@@ -1,0 +1,10 @@
+File created
+Section created
+Block created
+Block option added
+Added block option
+Block closed
+Block created
+Block closed
+Section closed
+File closed

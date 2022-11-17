@@ -1,0 +1,18 @@
+File opened
+Section opened
+Section options retrieved
+Option code 1
+Block opened
+Retrieved block type
+Snaplen 124 - linktype 1240
+Block closed
+Section closed
+Section opened
+Section options retrieved
+Option code 1
+Block opened
+Retrieved block type
+Snaplen 124 - linktype 1240
+Block closed
+Section closed
+File closed

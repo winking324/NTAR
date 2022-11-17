@@ -1,0 +1,6 @@
+File opened
+Section created
+Added section option
+Added section option
+Section closed
+File closed

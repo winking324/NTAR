@@ -1,0 +1,6 @@
+File created
+Section created
+Block created
+Block closed
+Section closed
+File closed
