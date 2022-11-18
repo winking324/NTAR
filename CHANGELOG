@@ -1,0 +1,17 @@
+# Changelog
+
+## 1.1.0.191 (2022-11-18)
+
+- Migrate to GitHub.
+- Support cmake.
+
+## 1.1.0.190 (2005-07-09)
+
+- Changed the implementation of read/write/seek to trace files using callbacks. The user can open a file using the standard `ntar_open()`, or provide its own handlers to access the file (read/write/seek) and use `ntar_open_by_handlers()`. This new approach allows to access non-standard files, like sockets, FIFOs, compressed and/or ciphered files, and even a memory buffer.
+- Enabled the internal use of seeks into the file to speedup the read/write process.
+- Fixed some gotchas in the definition of the open flags.
+- Added some better error reporting upon `ntar_open()` failure.
+
+## 1.1.0.135 (2005-06-19)
+
+- Released the first version of the NTAR library.
