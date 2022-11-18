@@ -298,7 +298,7 @@ int ntar_native_file_write(void *handle, void* buffer, size_t size);
 int ntar_native_file_read(void *handle, void* buffer, size_t size, size_t *read_bytes);
 int ntar_native_file_seek(void *handle, ntar_foff new_position, int origin, ntar_foff *old_position);
 int ntar_native_file_close(ntar_file_handlers file_handlers);
-int ntar_native_file_open(char *filename, char *flags, ntar_file_handlers *file_handlers);
+int ntar_native_file_open(const char *filename, const char *flags, ntar_file_handlers *file_handlers);
 
 
 

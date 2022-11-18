@@ -319,7 +319,7 @@ typedef struct _ntar_file_handlers
      - \ref NTAR_SUCCESS if the operation was successful.
      -  one of the other \ref ExportedErrorCodes "NTAR error codes" in any other case.
 */
-int ntar_open(char* filename, char* flags, ntar_file_handle** pfile_handle);
+int ntar_open(const char* filename, const char* flags, ntar_file_handle** pfile_handle);
 
 /*!
 	\brief This functions open a new dump file for reading or writing using some external read/write/seek
@@ -341,7 +341,7 @@ int ntar_open(char* filename, char* flags, ntar_file_handle** pfile_handle);
 	\todo The flags are completely nonsense. What is the meaning of appending when the user provides the callbacks??
 
 */
-int ntar_open_by_handlers(ntar_file_handlers file_handlers, char* flags, ntar_file_handle** pfile_handle);
+int ntar_open_by_handlers(ntar_file_handlers file_handlers, const char* flags, ntar_file_handle** pfile_handle);
 
 /*!
     \brief This function closes a dump file flushing all the unwritten data to disk.

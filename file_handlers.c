@@ -175,7 +175,7 @@ int ntar_native_file_seek(void *handle, ntar_foff new_position, int origin, ntar
 
 }
 
-int ntar_native_file_open(char *filename, char *flags, ntar_file_handlers *file_handlers)
+int ntar_native_file_open(const char *filename, const char *flags, ntar_file_handlers *file_handlers)
 {
 	FILE *fp;
 	int file_mode;

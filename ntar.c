@@ -39,7 +39,7 @@
 /* This function does nothing more than using the internal, predefined read/write/seek
  * callbacks in ntar_file_handlers, and then call ntar_open_by_handlers
  */
-int	ntar_open(char* filename, char* flags, ntar_file_handle** pfile_handle)
+int	ntar_open(const char* filename, const char* flags, ntar_file_handle** pfile_handle)
 {
 	int result;
 	
@@ -77,7 +77,7 @@ int	ntar_open(char* filename, char* flags, ntar_file_handle** pfile_handle)
 
 //TODO: the flags do not make any sense: we know if we are reading/writing by looking at the callbacks.
 // what if the user passes both the read and the write handler?
-int ntar_open_by_handlers(ntar_file_handlers file_handlers, char* flags, ntar_file_handle** pfile_handle)
+int ntar_open_by_handlers(ntar_file_handlers file_handlers, const char* flags, ntar_file_handle** pfile_handle)
 {
 	ntar_file_handle *new_file_handle;
 	int file_mode;
