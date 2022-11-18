@@ -40,7 +40,11 @@
 
 #include <stdio.h>
 #include <string.h>
+#ifdef __APPLE__
+#include <stdlib.h>
+#else
 #include <malloc.h>
+#endif
 
 #ifdef _MSC_VER
 /* this is used to avoid a Visual C warning on /W4 about unused parameters */
