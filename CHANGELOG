@@ -2,8 +2,10 @@
 
 ## 1.1.0.191 (2022-11-18)
 
-- Migrate to GitHub.
-- Support cmake.
+- Migrated to GitHub.
+- Supported cmake.
+- Fixed building errors under the macOS.
+- Optimized the use of `const` pointers for some interfaces.
 
 ## 1.1.0.190 (2005-07-09)
 
