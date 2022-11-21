@@ -32,7 +32,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(ntar)
 
-add_library(${PROJECT_NAME} STATIC
+set(TARGET_SOURCES
     block.c
     option_readers.c
     plugin_idb.c
@@ -45,6 +45,19 @@ add_library(${PROJECT_NAME} STATIC
     section.c
     error.c
     )
+set(TARGET_PUBLIC_HEADERS
+    block_headers.h
+    bittypes.h
+    ntar.h
+    plugins.h
+    plugin_idb.h
+    plugin_pktb.h
+    plugin_spb.h
+    )
+
+add_library(${PROJECT_NAME} STATIC
+    ${TARGET_SOURCES}
+    )
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC ${PROJECT_SOURCE_DIR}/
@@ -52,10 +65,10 @@ target_include_directories(${PROJECT_NAME}
 
 set_target_properties(${PROJECT_NAME}
     PROPERTIES PUBLIC_HEADER 
-    "ntar.h"
+    "${TARGET_PUBLIC_HEADERS}"
     )
 
 install(TARGETS ${PROJECT_NAME}
     DESTINATION lib
-    PUBLIC_HEADER DESTINATION include
+    PUBLIC_HEADER DESTINATION include/${PROJECT_NAME}
     )
